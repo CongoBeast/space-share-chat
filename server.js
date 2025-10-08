@@ -345,7 +345,7 @@ const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 const app = express();
 const server = http.createServer(app);
-const PORT = 3001;
+const PORT = 3002;
 
 app.use(express.json());
 app.use(cors({
@@ -792,4 +792,5 @@ process.on('SIGINT', async () => {
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
 
